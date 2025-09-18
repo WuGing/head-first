@@ -37,7 +37,7 @@ public class StatisticsDisplay : IObserver, IDisplayElement
 
     public void Display()
     {
-        Console.WriteLine($"Avg/Max/Min temperature = {tempSum/numReadings}/{maxTemp}/{minTemp}");
+        Console.WriteLine($"Avg/Max/Min temperature = {tempSum/numReadings:F1}/{maxTemp:F1}/{minTemp:F1}");
     }
 
 }

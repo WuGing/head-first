@@ -2,7 +2,7 @@ public class ForecastDisplay : IObserver, IDisplayElement
 {
     private double currentPressure;
     private double lastPressure;
-    private ISubject weatherData;
+    private required ISubject weatherData;
 
     public ForecastDisplay(ISubject weatherData)
     {
